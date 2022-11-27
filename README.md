@@ -72,10 +72,15 @@ cout << ch - '0' << endl; //和java一样，字符型之间可以直接加减
 cout << (int)'A' << endl; //计算ACSII码值
 ```
 ### 转移字符
-\t  制表符  能够让后面的内容对齐
-![image](https://user-images.githubusercontent.com/83968454/204140505-2425fc6e-60d4-408e-8e50-804d3c164daf.png)
-\n  换行符，与cout << endl 中的endl一样作用
-\\ 代表 一个反斜杠 '\'  
+\t  制表符  能够让后面的内容对齐  
+```c++
+cout << "aaaa\tHelloWorld'n";
+cout << "aa\tHelloWorld'n";
+cout << "aaaaaa\tHelloWorld'n";
+```
+![image](https://user-images.githubusercontent.com/83968454/204140505-2425fc6e-60d4-408e-8e50-804d3c164daf.png)  
+\n  换行符，与cout << endl 中的endl一样作用  
+\\ 代表 一个反斜杠 '\'   
 \'  
 \"  
 \?  
