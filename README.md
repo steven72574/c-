@@ -326,8 +326,8 @@ int main() {
 }
 ```
 
-__常量指针__ :指针的 __指向__ 可以改，但是该指针 __指向的值__ 不能改，如下图  
-__指针常量__ :指针 __指向的值__ 可以改，但是 __指向__ 不能改。
+__常量指针__ pointer to const:指针的 __指向__ 可以改，但是该指针 __指向的值__ 不能改，如下图  
+__指针常量__ const pointer :指针 __指向的值__ 可以改，但是 __指向__ 不能改。  
 记忆tips: \*const 表示指针常量，不能改地址。  const int 表示常量指针，不能改值
 ```c++
 int main() {
@@ -344,4 +344,43 @@ int main() {
 	return 0; 
 }
 ```
+### 访问数组
+```c++
+int main() {
+	
 
+	int arr[] = { 1,2,3,4,5,6 };
+
+	int* p = arr;
+
+	cout << *p << endl; //输出1
+
+	p++; //p会往后偏移四个字节
+
+	cout << *p << endl; //输出2
+
+	system("pause");
+	return 0; 
+}
+```
+使用指针进行地址传递，则函数执行后会修改函数外的值
+```c++
+void swap(int* a, int* b) {
+
+	int temp = *a; 
+	*a = *b;
+	*b = temp;
+}
+int main() {
+	
+	int a = 10;
+	int b = 20;
+	
+	swap(&a, &b);
+	cout << a << endl;
+	cout << b << endl;
+
+	system("pause");
+	return 0; 
+}
+```
