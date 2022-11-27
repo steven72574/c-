@@ -174,3 +174,50 @@ int main() {
 	return 0; 
 }
 ```
+### 三目运算符（三元运算符，和java一样）
+表达式1? 表达式2：表达式3
+表达式1为 __true__ 则 执行表达式2，否则执行表达式3
+
+### switch 语句(和java一样)
+switch判断时只能是整型或者字符型，不能是一个区间。但优点是结构清晰，执行效率高。  
+若无break，则实行完一个case语句，会接着执行下一个case语句  
+若case中的条件都不满足，则执行break  
+```c++
+#include <iostream>
+using namespace std;
+
+int main() {
+	
+	cout << "输入这部电影的分数(1-5)\n";
+	int score = 0;
+	cin >> score;
+	switch (score) {
+	case 1:
+		cout << "电影很烂\n";
+		break;
+	case 2:
+		cout << "电影一般般，没有亮点\n";
+		break;
+	case 3:
+		cout << "电影还行，凑合着看\n";
+		break;
+	case 4:
+		cout << "电影挺不错的，好看\n";
+		break;
+	case 5:
+		cout << "这部电影非常棒啊，强推\n";
+		break;
+	default:
+		cout << "输入的分数不在范围内哦\n";
+		break;
+	}
+
+	system("pause");
+
+	return 0; 
+}
+```
+
+### while语句（和java一样）
+while(判断条件){
+}
