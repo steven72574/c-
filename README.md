@@ -298,4 +298,5 @@ int getSum(int a, int b);
 然后在源文件中添加
 ```c++
 #include "getSum.h"  
+```
 最后在主函数把头文件include进来
