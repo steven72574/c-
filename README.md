@@ -427,3 +427,32 @@ struct关键字可以省略
 ### 结构体数组（和普通数组一样）
 ### 结构体指针
 ![image](https://user-images.githubusercontent.com/83968454/204153347-9a26f24c-2f11-4554-b75f-6ad05bb7bcdc.png)
+
+### 结构体嵌套
+```c++
+struct Student {
+	string name;
+	int age;
+	int score;
+}; 
+struct Teacher {
+	string name;
+	int age;
+	Student stu;
+};
+int main() {
+	
+	Student s1;
+	s1.age = 20;
+	s1.score = 90;
+	s1.name = "李大明";
+	
+	Teacher t1 = { "李老师" , 35 , s1 };
+
+	cout <<t1.stu.age << endl;
+
+	system("pause");
+	return 0; 
+}
+```
+### 结构体传入函数时若为值传递，则每个变量都要拷贝一份，若是地址传递，则效率高很多。
