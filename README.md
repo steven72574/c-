@@ -387,11 +387,16 @@ int main() {
 指针与函数与数组。函数
 ```c++
 void printAll(int* a, int length) {//这里写int a[]也可以
-
+	//version 1
 	for (int i = 0; i < length; i++) {
 		cout << *a << endl;
 		a++;
 	}
+	//version 2
+	for (int i = 0; i < length; i++) {
+		cout << a[i] << endl; 		
+	}
+	
 }
 int main() {
 	
@@ -405,3 +410,20 @@ int main() {
 	return 0; 
 }
 ```
+
+### 结构体(java关键字为class)
+```c++
+struct Student {
+	string name;
+	int age;
+	int score;
+};
+```
+创建具体学生的方法，有三种（实例化）  
+第三种一般不推荐，容易忽略，影响阅读。
+struct关键字可以省略
+![image](https://user-images.githubusercontent.com/83968454/204153043-66cf35d3-c0c8-4652-9778-667af7c3c9e4.png)
+
+### 结构体数组（和普通数组一样）
+### 结构体指针
+![image](https://user-images.githubusercontent.com/83968454/204153347-9a26f24c-2f11-4554-b75f-6ad05bb7bcdc.png)
