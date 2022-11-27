@@ -300,3 +300,21 @@ int getSum(int a, int b);
 #include "getSum.h"  
 ```
 最后在主函数把头文件include进来
+
+## 7.指针
+可以通过指针保持一个变量的地址  
+```c++
+#include <iostream>
+using namespace std;
+
+int main() {
+
+	int* p;
+	int a = 10;
+	p = &a;
+	cout << *p << endl;
+
+	system("pause");
+	return 0; 
+}
+```
