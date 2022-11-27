@@ -96,3 +96,18 @@ char str1[] = "This is a string";
 ```c++
 string str2 = "This is another string";
 ```
+vs2019之前，用string 声明字符串前，要加string头文件。
+```c++
+#include<string>
+```
+
+### 布尔型
+bool 占用一个字节空间
+```c++
+bool b = true;
+b = 1; //这种赋值也可以
+bool c = false;
+c = 1;
+cout << b << endl; //输出1
+cout << c <, endl; //输出0
+```
