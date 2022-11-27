@@ -102,7 +102,8 @@ vs2019之前，用string 声明字符串前，要加string头文件。
 ```
 
 ### 布尔型
-bool 占用一个字节空间
+bool 占用一个字节空间  
+输入的值只要非零都为真  
 ```c++
 bool b = true;
 b = 1; //这种赋值也可以
@@ -110,4 +111,32 @@ bool c = false;
 c = 1;
 cout << b << endl; //输出1
 cout << c <, endl; //输出0
+```
+
+### 数据的输入
+cin >> 变量名  
+
+### 运算符
+加减乘除和Java一样  
+两小数相除才是小数  
+有一方是浮点型，则结果是浮点型(和java一样)  
+自增自减符和java一样  
+
+```c++
+	int a = 7;
+	int b = 3;
+	cout << a / b << endl; //两整数相除会取整数部分，和Java一样
+	cout << a % b << endl; //求余数，注意，两个小数不能取模运算，但是java可以
+```
+__赋值运算与java一样__  
+```c++
+ int a = 10;
+ a += 2;
+```
+__比较运算符与java一样__
+![image](https://user-images.githubusercontent.com/83968454/204142298-f9327b26-9299-4363-ade0-e22da1db828b.png)
+```c++
+	int a = 110;
+	int b = 10;
+	cout << (a == b) << endl; //要加括号，这里是要注意的地方
 ```
