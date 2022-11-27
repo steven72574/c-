@@ -309,10 +309,10 @@ using namespace std;
 
 int main() {
 
-	int* p;
+	int* p;//定义指针
 	int a = 10;
-	p = &a;
-	cout << *p << endl;
+	p = &a;//p存储a的内存地址
+	cout << *p << endl;  //获取该内存地址存放的值
 
 	system("pause");
 	return 0; 
