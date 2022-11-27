@@ -8,7 +8,8 @@ using namespace std;
 int main() {
 	int a = 10;
 	cout << "hello world" ;//不换行
-	cout << "换行" << endl; //endl 换行符
+	cout << "换行" << endl; //endl 换行符与 \n作用一样
+	cout << “换行\n” ; 
 	cout << "a =" << a << endl; // “ << ”相当于拼接符，java中字符串拼接的 “+”
 	
 	system("pause");
@@ -60,12 +61,21 @@ double c = 3.14159;
 ### 字符型（基本和java一样）
 字符变量占用一个字节  
 字符型变量存储Ascii编码  
-常见ASCII码值：
-'a' -> 97
-'A' -> 65
-'0' -> 48
+常见ASCII码值：  
+'a' -> 97  
+'A' -> 65  
+'0' -> 48  
 ```c++
 char ch = 'a';
+char ch1 = 97;//可以直接赋值
 cout << ch - '0' << endl; //和java一样，字符型之间可以直接加减
 cout << (int)'A' << endl; //计算ACSII码值
 ```
+### 转移字符
+\t  制表符  能够让后面的内容对齐
+![image](https://user-images.githubusercontent.com/83968454/204140505-2425fc6e-60d4-408e-8e50-804d3c164daf.png)
+\n  换行符，与cout << endl 中的endl一样作用
+\\ 代表 一个反斜杠 '\'  
+\'  
+\"  
+\?  
