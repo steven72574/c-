@@ -384,3 +384,24 @@ int main() {
 	return 0; 
 }
 ```
+指针与函数与数组。函数
+```c++
+void printAll(int* a, int length) {//这里写int a[]也可以
+
+	for (int i = 0; i < length; i++) {
+		cout << *a << endl;
+		a++;
+	}
+}
+int main() {
+	
+	int a[] = { 1,2,3,4,5,6 };
+	
+	int length = sizeof(a) / sizeof(a[0]);
+	
+	printAll(a, length);//传入的就是数组的地址
+	
+	system("pause");
+	return 0; 
+}
+```
