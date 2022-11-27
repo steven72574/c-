@@ -87,6 +87,8 @@ cout << "aaaaaa\tHelloWorld'n";
 
 
 ### 字符串型
+
+
 有两种风格  
 1.c风格型  
 ```c++
@@ -99,6 +101,14 @@ string str2 = "This is another string";
 vs2019之前，用string 声明字符串前，要加string头文件。
 ```c++
 #include<string>
+```
+字符串可以直接用数组进行访问  
+字符串可以直接拼接  
+```c++
+string s1 = "World";
+string s2 = "Hello";
+string s3 = s1 + s2;
+cout << s3 << endl;
 ```
 
 ### 布尔型
@@ -456,3 +466,12 @@ int main() {
 }
 ```
 ### 结构体传入函数时若为值传递，则每个变量都要拷贝一份，若是地址传递，则效率高很多。
+但是地址传递要防止参数被修改的话，可以加一个const关键字
+```c++
+void printStudents(const Student *S)
+```
+```c++
+//随机数
+srand((unsigned int) time(NULL)); //加了这个语句才是真随机
+int a = rand();//只有这个语句不是真随机
+```
