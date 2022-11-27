@@ -71,7 +71,7 @@ char ch1 = 97;//可以直接赋值
 cout << ch - '0' << endl; //和java一样，字符型之间可以直接加减
 cout << (int)'A' << endl; //计算ACSII码值
 ```
-### 转移字符
+### 转义字符
 \t  制表符  能够让后面的内容对齐  
 ```c++
 cout << "aaaa\tHelloWorld'n";
@@ -84,3 +84,15 @@ cout << "aaaaaa\tHelloWorld'n";
 \'  
 \"  
 \?  
+
+
+### 字符串型
+有两种风格  
+1.c风格型  
+```c++
+char str1[] = "This is a string";
+```
+2.c++风格
+```c++
+string str2 = "This is another string";
+```
