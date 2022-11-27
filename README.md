@@ -221,3 +221,47 @@ int main() {
 ### while语句（和java一样）
 while(判断条件){
 }
+
+### do while语句（和java一样）
+do {}while()
+
+### for循环（和java一样）
+continue break关键字也和java一样  
+
+### goto语句（跳到标记直接执行，最好不好使用,不方便阅读，因为会跳来跳去）
+goto 标记;
+标记一般是大写;
+```c++
+#include <iostream>
+using namespace std;
+
+int main() {
+	
+	cout << "1" << endl;
+	goto Jump;
+	cout << "2" << endl;
+	cout << "3" << endl;
+	cout << "4" << endl;
+	
+	Jump: //标记处用的是冒号，不是分号
+
+	cout << "5" << endl;
+
+	system("pause");
+	return 0; 
+}
+```
+### 数组
+数组声明方式，和java很不同
+```c++
+//C++ 数组声明
+int a[10];
+int b[2] = { 1,2 };
+int c[] = { 1,2,3 };
+```
+```java
+//Java 数组声明
+int[] a;
+int[] b = new int[2];
+int[] c = new int[]{1,2,3};
+```
