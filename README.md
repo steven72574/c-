@@ -146,3 +146,31 @@ __逻辑运算符与java一样__
 &&	//与
 ||	//或
 ```
+
+### 程序流程结构
+顺序结构  
+选择结构，如if  
+循环结构  
+### if语句（和java一样）
+```c++
+#include <iostream>
+using namespace std;
+
+int main() {
+	
+	int a = 0 ;
+	cout << "输入你的分数\n";
+	cin >> a;
+	if (a >= 60) {
+		cout << "恭喜你及格啦\n";
+	}
+	else if(a >= 50){
+		cout << "很遗憾你没有及格，但是很接近及格，继续加油哦\n";
+	}
+	else {
+		cout << "很遗憾你没有及格，请再接再厉吧\n";
+	}
+	system("pause");
+	return 0; 
+}
+```
