@@ -412,12 +412,28 @@ int main() {
 	
 	int a[] = { 1,2,3,4,5,6 };
 	
-	int length = sizeof(a) / sizeof(a[0]);
+	int length = sizeof(a) / sizeof(a[0]);//注意不能在函数里面写
 	
 	printAll(a, length);//传入的就是数组的地址
 	
 	system("pause");
 	return 0; 
+}
+```
+### 注意，sizeof对于数组，在函数体内和主函数的区别
+```c++
+void test(int arr[]) {
+	cout << sizeof(arr) << endl; //输出4
+}
+
+int main() {
+	int arr[3];
+	cout << sizeof(arr) << endl;//输出12
+	test(arr);
+
+	system("pause");
+	return 0; 
+
 }
 ```
 
