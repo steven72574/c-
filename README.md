@@ -81,10 +81,10 @@ cout << "aaaaaa\tHelloWorld'n";
 ```
 ![image](https://user-images.githubusercontent.com/83968454/204140505-2425fc6e-60d4-408e-8e50-804d3c164daf.png)  
 \n  换行符，与cout << endl 中的endl一样作用  
-\\ 代表 一个反斜杠 '\'   
-\'  
-\"  
-\?  
+\\\ 代表 一个反斜杠 '\'   
+\\'  
+\\"  
+\\?  
 
 
 ### 字符串型
