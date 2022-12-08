@@ -262,7 +262,13 @@ int main() {
 }
 ```
 ### 数组
-数组声明方式，和java很不同
+数组声明方式，和java很不同  
+注意，c++不能用变量的值来声明数组，即int temp[size]，是会报错的必须 int temp
+```c++
+int size = 100;
+int temp[size];//报错
+int temp[100];//正确
+```
 ```c++
 //C++ 数组声明
 int a[10];
